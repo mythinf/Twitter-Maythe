@@ -1,0 +1,61 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url(../assets/women.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Space Mono', monospace;
+}
+header{
+  background:#000000;
+  color:pink;
+  width: auto;
+  height: 100px;
+  text-align: center;
+}
+header nav{
+  font-family: 'Libre Barcode 39 Extended Text', cursive;
+  font-size: 50px;
+  padding: 30px;
+}
+section{
+  display: inline-block;
+  margin: 10px;
+}
+#container{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#profile_box{
+  height: auto;
+  width:500px;
+  background: #000000;
+  color: #ffff;
+  text-align: center;
+}
+div h1 {
+  background: pink;
+  width: 100%;
+  height: 50px;
+  color: #000000;
+}
+img{
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px
+}
+#text_box{
+  height: auto;
+  width: auto;
+  border: none;
+}
+textarea{
+  width: 400px;
+  height: 150px;
+  border: hidden;
+  background: pink;
+}
