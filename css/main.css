@@ -85,6 +85,8 @@ button{
 }
 
 #text-container{
+  font-family: 'Courgette', cursive;
+  font-size: 20px;
   height: auto;
   width: auto;
 }
