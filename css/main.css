@@ -59,3 +59,8 @@ textarea{
   border: hidden;
   background: pink;
 }
+#text-container{
+  background: pink;
+  height: auto;
+  width: auto;
+}
