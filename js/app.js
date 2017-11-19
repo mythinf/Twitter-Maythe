@@ -7,20 +7,26 @@ window.addEventListener('load', function(event) {
   //  creando función que almacena los textos a un contenetor
   function addCharacters() {
     if (characters.value) {
+      var commitDiv = document.createElement('div');
+      commitDiv.style.background = '#ffff';
+      commitDiv.style.width = '500px';
+      commitDiv.style.height = 'auto';
+      commitDiv.style.margin = '20px';
+      commitDiv.style.borderRadius = '10px';
       var textDiv = document.createElement('div');
-      textDiv.style.background = '#ffff';
-      textDiv.style.width = '500px';
-      textDiv.style.height = 'auto';
-      textDiv.style.margin = '20px';
-      textDiv.style.borderRadius = '10px';
-
       var text = document.createElement('p');
+      text.textContent = characters.value ;
+      commitDiv.appendChild(textDiv);
+      textDiv.appendChild(text);
+      textContainer.appendChild(commitDiv);
+      characters.value = '';
+
       //  agregando hora de publicación
       var time = moment().format('LLLL');
-      text.textContent = characters.value;
-      textDiv.appendChild(text);
-      textContainer.appendChild(textDiv);
-      characters.value = '';
+      var timeDiv = document.createElement('div');
+      timeDiv.textContent = time;
+      timeDiv.style.color = 'red';
+      commitDiv.appendChild(timeDiv);
     };
 
     characters.addEventListener('keydown', pressEnter);
