@@ -9,15 +9,17 @@ window.addEventListener('load', function(event) {
     if (characters.value) {
       var textDiv = document.createElement('div');
       textDiv.style.background = '#ffff';
-      textDiv.style.width = 'auto';
+      textDiv.style.width = '500px';
       textDiv.style.height = 'auto';
       textDiv.style.margin = '20px';
       textDiv.style.borderRadius = '10px';
 
       var text = document.createElement('p');
+      //  agregando hora de publicación
+      var time = moment().format('LLLL');
       text.textContent = characters.value;
-      textContainer.appendChild(textDiv);
       textDiv.appendChild(text);
+      textContainer.appendChild(textDiv);
       characters.value = '';
     };
 
