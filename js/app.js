@@ -9,8 +9,8 @@ window.addEventListener('load', function(event) {
     if (characters.value) {
       var textDiv = document.createElement('div');
       textDiv.style.background = '#ffff';
-      textDiv.style.width = '500px';
-      textDiv.style.height = '80px';
+      textDiv.style.width = 'auto';
+      textDiv.style.height = 'auto';
       textDiv.style.margin = '20px';
       textDiv.style.borderRadius = '10px';
 
@@ -21,6 +21,11 @@ window.addEventListener('load', function(event) {
       characters.value = '';
     };
 
+    characters.addEventListener('keydown', pressEnter);
+    //  creando función que agrandará el contenetor al presionar 'Enter'
+    function pressEnter() {
+      characters.style.cssText = 'height:' + characters.scrollHeight + 'px';
+    }
     characters.addEventListener('keyup', countCharacters);
     //  creando función que cuenta n° de caracteres ingresados
     function countCharacters() {
