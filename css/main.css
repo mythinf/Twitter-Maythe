@@ -81,6 +81,9 @@ button{
   border: 0;
   font-weight: 600;
 }
+button:hover{
+  filter: contrast(.5);
+}
 #number_characters{
   background: #ffff;
   border-radius: 50px;
