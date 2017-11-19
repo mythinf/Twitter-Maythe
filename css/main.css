@@ -29,18 +29,22 @@ section{
   margin-left: 5%;
   margin-right: 5%;
 }
-#profile_box{
+#profile-box{
+  padding: 10px;
   height: auto;
   width:500px;
   background: #000000;
+  border-radius: 10px;
   color: #ffff;
   text-align: center;
 }
 div h1 {
+  margin: 0;
   background: pink;
   width: 100%;
   height: 50px;
   color: #000000;
+  border-radius: 10px;
 }
 img{
   margin: 10px;
@@ -48,19 +52,39 @@ img{
   height: 150px;
   border-radius: 150px
 }
-#text_box{
+#text-box{
   height: auto;
   width: auto;
   border: none;
 }
 textarea{
-  width: 400px;
+  width: 600px;
   height: 150px;
   border: hidden;
+  border-radius: 10px;
   background: pink;
 }
+.button-characters{
+  margin: 5px;
+  font-size: 30px;
+}
+.btn-c{
+  display: inline;
+}
+button{
+  background-color: #000000;
+  padding: 10px 10px;
+  color: pink;
+  border-radius: 5px;
+  border: 0;
+  font-weight: 600;
+}
+#number_characters{
+  background: #ffff;
+  border-radius: 50px;
+}
+
 #text-container{
-  background: pink;
   height: auto;
   width: auto;
 }
